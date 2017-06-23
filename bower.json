@@ -1,0 +1,25 @@
+{
+  "name": "PracticasAngular",
+  "authors": [
+    "Jesus Gomez"
+  ],
+  "description": "CursoAngulaYPracticas",
+  "main": "",
+  "keywords": [
+    "curso",
+    "angualr",
+    "practicas"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
+}

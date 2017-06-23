@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="miPrimerWebApp">
+    <!-- 
+ng-app indica que creamos una aplicacion
+se coloca dentro de html para hacer referencia a todo el documento
+-->
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Testing the tools
+            </title>
+        </meta>
+    </head>
+    <body ng-controller="controladorBasico">
+        <div ng-repeat="perrito in superDogs">
+            <img alt="" src="img/{{ perrito.foto }}">
+                <h2>
+                    Nombre: {{ perrito.nombre }}
+                </h2>
+                <h3>
+                    tengo: {{ perrito.edad}} años
+                </h3>
+            </img>
+        </div>
+        <!-- ejemplo uno
+        name:
+        <input ng-model="name" type="text"/>
+        {{ name }}
+        -->
+        <!-- ejemplo dos -->
+        <p ng-repeat="valores in name">
+            {{ valores }}
+        </p>
+        <!-- 
+ng-model declara variables 
+declaramos nombre al input 'name'
+
+{{ name }}
+expresion de ligado de informacion
+-->
+        <script src="js/angular.min.js">
+        </script>
+        <!-- build:js scripts/main.min.js -->
+        <script src="js/script.js">
+        </script>
+        <!-- endbuild -->
+    </body>
+</html>
